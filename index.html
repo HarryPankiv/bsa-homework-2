@@ -196,33 +196,43 @@
 			for (let i = 0; i < checkboxes.length; i++) {
 				checkboxes[i].checked = false;
 			}
+
+			let days = document.querySelectorAll('.circle-container a');
+			for (let i = 0; i < days.length; i++) {
+				days[i].classList.remove("active");
+			}
+
 			let dayid = document.getElementById('day').innerHTML.toLowerCase().substr(0,3);
-			document.getElementById(dayid).addClass("active");
+			document.getElementById(dayid).classList.add("active");
 			return false;
 		}
 
 		function printHour(value) {
 			var checkboxes = document.getElementsByTagName("input");
 			var checked = document.querySelectorAll('input[type=checkbox]:checked');
-			let checkedValues = [];
+			let arr = [];
 			for (let i = 0; i < checked.length; i++) {
-				checkedValues.push(checked[i].value);
+				arr.push(checked[i].value);
 			}
-			// document.getElementById('schedule-' + document.getElementById('day').innerHTML.toLowerCase()).innerHTML = checkedValues;
-			
-			var arr = ['0:00', '12:00', '13:00', '14:00', '16:00', "20:00", "21:00"];
+
+			arr = arr.join('').split(':00');
+			arr.pop();
 
 			arr = arr.reduce((i, j) => {
-			  let lastArray = i[i.length - 1];
-			  if (lastArray && parseInt(lastArray[lastArray.length - 1]) + 1 === parseInt(j)) {
-			    lastArray.push(j);
-			  } else {
-			    i.push([j]);
-			  }
-			  return i
+			  	let lastArray = i[i.length - 1];
+			  	if (lastArray && parseInt(lastArray[lastArray.length - 1]) + 1 === parseInt(j)) {
+			    	lastArray.push(j);
+			  	} else {
+			    	i.push([j]);
+			  	}
+			  	return i
 			}, []);
 
-			console.log(arr);
+			for ( let i = 0; i < arr.length; i++ ) {
+				arr[i] = " " + arr[i][0] + ":00&nbsp;-&nbsp;" + (+arr[i][arr[i].length-1] + 1) + ":00";
+			}
+
+			document.getElementById('schedule-' + document.getElementById('day').innerHTML.toLowerCase()).innerHTML = arr;
 			return false;
 		}
 	</script>
