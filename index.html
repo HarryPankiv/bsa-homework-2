@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Hospital</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Song+Myung" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
@@ -27,7 +28,7 @@
 			<p>phone number</p>
 		</aside>
 	</div>
-	<div>
+	<div class="container">
 		<h3 id="day">Monday</h3>
 		<div id="checkboxes">
 			<div class="column">
@@ -158,33 +159,37 @@
 		<button class="button" onclick="return printHour()">Submit</button>
 		<h3>Your Schedule :</h3>
 		<div class="schedule">
-			<div>
-				<h4>Monday</h4>
-				<p id="schedule-monday">Day off</p>
+			<div class="row">
+				<div>
+					<h4>Monday</h4>
+					<p id="schedule-monday">Day off</p>
+				</div>
+				<div>
+					<h4>Tuesday</h4>
+					<p id="schedule-tuesday">Day off</p>
+				</div>
+				<div>
+					<h4>Wednesday</h4>
+					<p id="schedule-wednesday">Day off</p>
+				</div>
+				<div>
+					<h4>Thursday</h4>
+					<p id="schedule-thursday">Day off</p>
+				</div>
+				<div>
+					<h4>Friday</h4>
+					<p id="schedule-friday">Day off</p>
+				</div>
 			</div>
-			<div>
-				<h4>Tuesday</h4>
-				<p id="schedule-tuesday">Day off</p>
-			</div>
-			<div>
-				<h4>Wednesday</h4>
-				<p id="schedule-wednesday">Day off</p>
-			</div>
-			<div>
-				<h4>Thursday</h4>
-				<p id="schedule-thursday">Day off</p>
-			</div>
-			<div>
-				<h4>Friday</h4>
-				<p id="schedule-friday">Day off</p>
-			</div>
-			<div>
-				<h4>Saturday</h4>
-				<p id="schedule-saturday">Day off</p>
-			</div>
-			<div>
-				<h4>Sunday</h4>
-				<p id="schedule-sunday">Day off</p>
+			<div class="row">
+				<div>
+					<h4>Saturday</h4>
+					<p id="schedule-saturday">Day off</p>
+				</div>
+				<div>
+					<h4>Sunday</h4>
+					<p id="schedule-sunday">Day off</p>
+				</div>
 			</div>
 		</div>
 	</div>

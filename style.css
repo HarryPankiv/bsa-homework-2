@@ -3,6 +3,10 @@ body {
 	font-size: 18px;
 }
 
+.container {
+	margin: 15px;
+}
+
 .wrapper {
 	display: grid;
 	grid-template-columns: 80% 20%;
@@ -172,8 +176,8 @@ body {
 	background-color: #4CAF50;
 }
 
-.schedule > div {
-	max-width: 16%;
+.row {
+	width: 50%;
 }
 
 @media only screen and (max-width: 800px) {
@@ -192,5 +196,28 @@ body {
 
     .author {
     	max-width: 300px;
+    }
+
+    #checkboxes {
+    	display: flex;
+    }
+
+    .checkbox {
+    	display: block;
+    }
+
+    .timestamp {
+    	transform: initial;
+    	position: absolute;
+    	left: 40px;
+    	bottom: 10px;
+    }
+
+    .column {
+    	width: 50%;
+    }
+
+    .row p {
+    	line-height: 1.60;
     }
 }
