@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hospital</title>
+	<link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Song+Myung" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<main class="date">
+			<div class='circle-container'>
+				<a id="wed" href='#' class='deg14' onclick="return selectDay(wed)"><span>Wednesday</span></a>
+				<a id="thu" href='#' class='deg66' onclick="return selectDay(thu)"><span>Thursday</span></a>
+				<a id="fri" href='#' class='deg118' onclick="return selectDay(fri)"><span>Friday</span></a>
+				<a id="sat" href='#' class='deg166' onclick="return selectDay(sat)"><span>Saturday</span></a>
+				<a id="sun" href='#' class='deg218' onclick="return selectDay(sun)"><span>Sunday</span></a>
+				<a id="mon" href='#' class='deg270' onclick="return selectDay(mon)"><span>Monday</span></a>
+				<a id="tue" href='#' class='deg322' onclick="return selectDay(tue)"><span>Tuesday</span></a>
+			</div>
+		</main>
+		<aside>
+			<img class="author" src="./assets/chet-faker.jpg" alt="author">
+			<h3>Chet Faker</h3>
+			<p>Musician</p>
+			<p>Heals people with music</p>
+			<p>phone number</p>
+		</aside>
+	</div>
+	<div>
+		<h3 id="day">Monday</h3>
+		<div id="checkboxes">
+			<div class="column">
+				<div class="checkbox">
+					<input type="checkbox" id="checkbox-input1" name="0:00" value="0:00">
+					<label for="checkbox-input1"></label>
+					<span class="timestamp">0:00</span>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" id="checkbox-input2" name="1:00" value="1:00">
+					<label for="checkbox-input2"></label>
+					<span class="timestamp">1:00</span>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" id="checkbox-input3" name="2:00" value="2:00">
+					<label for="checkbox-input3"></label>
+					<span class="timestamp">2:00</span>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" id="checkbox-input4" name="3:00" value="3:00">
+					<label for="checkbox-input4"></label>
+					<span class="timestamp">3:00</span>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" id="checkbox-input5" name="4:00" value="4:00">
+					<label for="checkbox-input5"></label>
+					<span class="timestamp">4:00</span>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" id="checkbox-input6" name="5:00" value="5:00">
+					<label for="checkbox-input6"></label>
+					<span class="timestamp">5:00</span>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" id="checkbox-input7" name="6:00" value="6:00">
+					<label for="checkbox-input7"></label>
+					<span class="timestamp">6:00</span>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" id="checkbox-input8" name="7:00" value="7:00">
+					<label for="checkbox-input8"></label>
+					<span class="timestamp">7:00</span>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" id="checkbox-input9" name="8:00" value="8:00">
+					<label for="checkbox-input9"></label>
+					<span class="timestamp">8:00</span>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" id="checkbox-input10" name="9:00" value="9:00">
+					<label for="checkbox-input10"></label>
+					<span class="timestamp">9:00</span>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" id="checkbox-input11" name="10:00" value="10:00">
+					<label for="checkbox-input11"></label>
+					<span class="timestamp">10:00</span>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" id="checkbox-input12" name="11:00" value="11:00">
+					<label for="checkbox-input12"></label>
+					<span class="timestamp">11:00</span>
+				</div>
+			</div>
+			<div class="column">
+				<div class="checkbox">
+					<input type="checkbox" id="checkbox-input13" name="12:00" value="12:00">
+					<label for="checkbox-input13"></label>
+					<span class="timestamp">12:00</span>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" id="checkbox-input14" name="13:00" value="13:00">
+					<label for="checkbox-input14"></label>
+					<span class="timestamp">13:00</span>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" id="checkbox-input15" name="14:00" value="14:00">
+					<label for="checkbox-input15"></label>
+					<span class="timestamp">14:00</span>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" id="checkbox-input16" name="15:00" value="15:00">
+					<label for="checkbox-input16"></label>
+					<span class="timestamp">15:00</span>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" id="checkbox-input17" name="16:00" value="16:00">
+					<label for="checkbox-input17"></label>
+					<span class="timestamp">16:00</span>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" id="checkbox-input18" name="17:00" value="17:00">
+					<label for="checkbox-input18"></label>
+					<span class="timestamp">17:00</span>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" id="checkbox-input19" name="18:00" value="18:00">
+					<label for="checkbox-input19"></label>
+					<span class="timestamp">18:00</span>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" id="checkbox-input20" name="19:00" value="19:00">
+					<label for="checkbox-input20"></label>
+					<span class="timestamp">19:00</span>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" id="checkbox-input21" name="20:00" value="20:00">
+					<label for="checkbox-input21"></label>
+					<span class="timestamp">20:00</span>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" id="checkbox-input22" name="21:00" value="21:00">
+					<label for="checkbox-input22"></label>
+					<span class="timestamp">21:00</span>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" id="checkbox-input23" name="22:00" value="22:00">
+					<label for="checkbox-input23"></label>
+					<span class="timestamp">22:00</span>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" id="checkbox-input24" name="23:00" value="23:00">
+					<label for="checkbox-input24"></label>
+					<span class="timestamp">23:00</span>
+				</div>
+			</div>
+		</div>
+		<button class="button" onclick="return printHour()">Submit</button>
+		<h3>Your Schedule :</h3>
+		<div class="schedule">
+			<div>
+				<h4>Monday</h4>
+				<p id="schedule-monday">Day off</p>
+			</div>
+			<div>
+				<h4>Tuesday</h4>
+				<p id="schedule-tuesday">Day off</p>
+			</div>
+			<div>
+				<h4>Wednesday</h4>
+				<p id="schedule-wednesday">Day off</p>
+			</div>
+			<div>
+				<h4>Thursday</h4>
+				<p id="schedule-thursday">Day off</p>
+			</div>
+			<div>
+				<h4>Friday</h4>
+				<p id="schedule-friday">Day off</p>
+			</div>
+			<div>
+				<h4>Saturday</h4>
+				<p id="schedule-saturday">Day off</p>
+			</div>
+			<div>
+				<h4>Sunday</h4>
+				<p id="schedule-sunday">Day off</p>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		function selectDay(day) {
+			document.getElementById('day').innerHTML = day.getElementsByTagName('span')[0].innerHTML;
+			var checkboxes = document.getElementsByTagName("input");
+			for (let i = 0; i < checkboxes.length; i++) {
+				checkboxes[i].checked = false;
+			}
+			let dayid = document.getElementById('day').innerHTML.toLowerCase().substr(0,3);
+			document.getElementById(dayid).addClass("active");
+			return false;
+		}
+
+		function printHour(value) {
+			var checkboxes = document.getElementsByTagName("input");
+			var checked = document.querySelectorAll('input[type=checkbox]:checked');
+			let checkedValues = [];
+			for (let i = 0; i < checked.length; i++) {
+				checkedValues.push(checked[i].value);
+			}
+			// document.getElementById('schedule-' + document.getElementById('day').innerHTML.toLowerCase()).innerHTML = checkedValues;
+			
+			var arr = ['0:00', '12:00', '13:00', '14:00', '16:00', "20:00", "21:00"];
+
+			arr = arr.reduce((i, j) => {
+			  let lastArray = i[i.length - 1];
+			  if (lastArray && parseInt(lastArray[lastArray.length - 1]) + 1 === parseInt(j)) {
+			    lastArray.push(j);
+			  } else {
+			    i.push([j]);
+			  }
+			  return i
+			}, []);
+
+			console.log(arr);
+			return false;
+		}
+	</script>
+</body>
+</html>
