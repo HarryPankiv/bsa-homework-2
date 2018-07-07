@@ -9,7 +9,20 @@ body {
 
 .wrapper {
 	display: grid;
-	grid-template-columns: 80% 20%;
+	grid-template-columns: 75% 25%;
+}
+
+p > img {
+	vertical-align: sub;
+	padding-right: 10px; 
+}
+.job p {
+	margin: 0;
+	display: block;
+}
+
+.icon {
+	width: 30px;
 }
 
 .author {
@@ -220,4 +233,48 @@ body {
     .row p {
     	line-height: 1.60;
     }
+}
+
+@media screen and (max-width: 600px) {
+	.date .circle-container span {
+		display: flex;
+		justify-content: center;
+		margin: 20px;
+	}
+
+	.date .circle-container {
+		all: initial;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+	.date .circle-container a {
+		all: initial;
+		text-align: center;
+		display: block;
+		width: 100px;
+		height: 80px;
+		margin-top: 10px;
+		background-color: #373737;
+		color: white;
+		border-radius: 50%;
+  		
+	}
+	.deg14,
+	.deg66,
+	.deg118,
+	.deg166,
+	.deg218,
+	.deg270,
+	.deg322 {
+		transform: initial;
+	}
+
+	.date .circle-container:after {
+		border: hidden;
+	}
+	.date .circle-container .active {
+		background-color: #4CAF50;
+	}
 }

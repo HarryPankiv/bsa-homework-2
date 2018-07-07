@@ -11,27 +11,28 @@
 	<div class="wrapper">
 		<main class="date">
 			<div class='circle-container'>
+				<a id="mon" href='#' class='deg270' onclick="return selectDay(mon)"><span>Monday</span></a>
+				<a id="tue" href='#' class='deg322' onclick="return selectDay(tue)"><span>Tuesday</span></a>
 				<a id="wed" href='#' class='deg14' onclick="return selectDay(wed)"><span>Wednesday</span></a>
 				<a id="thu" href='#' class='deg66' onclick="return selectDay(thu)"><span>Thursday</span></a>
 				<a id="fri" href='#' class='deg118' onclick="return selectDay(fri)"><span>Friday</span></a>
 				<a id="sat" href='#' class='deg166' onclick="return selectDay(sat)"><span>Saturday</span></a>
 				<a id="sun" href='#' class='deg218' onclick="return selectDay(sun)"><span>Sunday</span></a>
-				<a id="mon" href='#' class='deg270' onclick="return selectDay(mon)"><span>Monday</span></a>
-				<a id="tue" href='#' class='deg322' onclick="return selectDay(tue)"><span>Tuesday</span></a>
 			</div>
 		</main>
 		<aside>
 			<img class="author" src="./assets/chet-faker.jpg" alt="author">
 			<h3>Chet Faker</h3>
-			<p>Musician</p>
-			<p>Heals people with music</p>
-			<p>phone number</p>
+			<p><img class="icon" src="./assets/job-icon.svg" alt="job-icon">Musician</p>
+			<p><img class="icon" src="./assets/description-icon.svg" alt="description-icon">Heals people with music</p>
+			<p><img class="icon" src="./assets/number-icon.svg" alt="number-icon">+380 *** ** **</p>
 		</aside>
 	</div>
 	<div class="container">
 		<h3 id="day">Monday</h3>
 		<div id="checkboxes">
 			<div class="column">
+				<img class="icon" src="./assets/moon.svg" alt="moon">
 				<div class="checkbox">
 					<input type="checkbox" id="checkbox-input1" name="0:00" value="0:00">
 					<label for="checkbox-input1"></label>
@@ -62,6 +63,7 @@
 					<label for="checkbox-input6"></label>
 					<span class="timestamp">5:00</span>
 				</div>
+				<img class="icon" src="./assets/sunrise.svg" alt="sunrise">
 				<div class="checkbox">
 					<input type="checkbox" id="checkbox-input7" name="6:00" value="6:00">
 					<label for="checkbox-input7"></label>
@@ -94,6 +96,7 @@
 				</div>
 			</div>
 			<div class="column">
+				<img class="icon" src="./assets/sun.svg" alt="sun">
 				<div class="checkbox">
 					<input type="checkbox" id="checkbox-input13" name="12:00" value="12:00">
 					<label for="checkbox-input13"></label>
@@ -124,6 +127,7 @@
 					<label for="checkbox-input18"></label>
 					<span class="timestamp">17:00</span>
 				</div>
+				<img class="icon" src="./assets/sunset.svg" alt="sunset">
 				<div class="checkbox">
 					<input type="checkbox" id="checkbox-input19" name="18:00" value="18:00">
 					<label for="checkbox-input19"></label>
