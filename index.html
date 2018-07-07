@@ -199,6 +199,9 @@
 	</div>
 
 	<script type="text/javascript">
+		window.onload = function() {
+			document.getElementById(document.getElementById('day').innerHTML.toLowerCase().substr(0,3)).classList.add("active");
+		}
 		function selectDay(day) {
 			document.getElementById('day').innerHTML = day.getElementsByTagName('span')[0].innerHTML;
 			var checkboxes = document.getElementsByTagName("input");

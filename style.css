@@ -100,16 +100,37 @@ p > img {
 	position: absolute;
 	top: 50%; left: 50%;
 	width: 5em; height: 5em;
-	margin: -2.5em; /* 2em = 4em/2 */ /* half the width */
+	margin: -2.5em;
 }
 .circle-container img { display: block; width: 100%; }
-.deg14 { transform: rotate(14deg) translate(12em) rotate(-14deg); } /* 12em = half the width of the wrapper */
-.deg66 { transform: rotate(66deg) translate(12em) rotate(-66deg); }
-.deg118 { transform: rotate(118deg) translate(12em) rotate(-118deg); }
-.deg166 { transform: rotate(166deg) translate(12em) rotate(-166deg); }
-.deg218 { transform: rotate(218deg) translate(12em) rotate(-218deg); }
-.deg270 { transform: rotate(270deg) translate(12em) rotate(-270deg); }
-.deg322 { transform: rotate(322deg) translate(12em) rotate(-322deg); }
+
+.deg14 { 
+	transform: rotate(14deg) translate(12em) rotate(-14deg); 
+}
+
+.deg66 { 
+	transform: rotate(66deg) translate(12em) rotate(-66deg); 
+}
+
+.deg118 { 
+	transform: rotate(118deg) translate(12em) rotate(-118deg); 
+}
+
+.deg166 {
+ 	transform: rotate(166deg) translate(12em) rotate(-166deg);
+}
+
+.deg218 {
+ 	transform: rotate(218deg) translate(12em) rotate(-218deg);
+}
+
+.deg270 {
+ 	transform: rotate(270deg) translate(12em) rotate(-270deg);
+ }
+ 
+.deg322 {
+	transform: rotate(322deg) translate(12em) rotate(-322deg);
+}
 
 /* this is for showing the circle on which the images are placed */
 .circle-container:after {
@@ -187,6 +208,9 @@ p > img {
 }
 
 .circle-container > .active {
+	transform: initial;
+	transition-duration: 2s!important;
+	transition-timing-function: ease;
 	background-color: #4CAF50;
 }
 
