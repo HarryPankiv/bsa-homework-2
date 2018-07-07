@@ -10,6 +10,8 @@
 <body>
 	<div class="wrapper">
 		<main class="date">
+			<h3>Choose the day of the week</h3>
+			<p>Click on the circle</p>
 			<div class='circle-container'>
 				<a id="mon" href='#' class='deg270' onclick="return selectDay(mon)"><span>Monday</span></a>
 				<a id="tue" href='#' class='deg322' onclick="return selectDay(tue)"><span>Tuesday</span></a>
@@ -161,6 +163,7 @@
 			</div>
 		</div>
 		<button class="button" onclick="return printHour()">Submit</button>
+		<p id="warning"></p>
 		<h3>Your Schedule :</h3>
 		<div class="schedule">
 			<div class="row">
@@ -203,6 +206,8 @@
 			document.getElementById(document.getElementById('day').innerHTML.toLowerCase().substr(0,3)).classList.add("active");
 		}
 		function selectDay(day) {
+			document.querySelector('.wrapper .date h3').style.display = 'none';
+			document.querySelector('.wrapper .date p').style.display = 'none';
 			document.getElementById('day').innerHTML = day.getElementsByTagName('span')[0].innerHTML;
 			var checkboxes = document.getElementsByTagName("input");
 			for (let i = 0; i < checkboxes.length; i++) {
@@ -225,6 +230,12 @@
 			let arr = [];
 			for (let i = 0; i < checked.length; i++) {
 				arr.push(checked[i].value);
+			}
+			for	(let i = 0; i < checked.length; i++) {
+				if (i < 6 && checked[i].checked) {
+					alert("Warning!\nYou are going to work at night!");
+					break;
+				}
 			}
 
 			arr = arr.join('').split(':00');

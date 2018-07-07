@@ -34,6 +34,15 @@ p > img {
     margin-top: 20px;
 }
 
+.date h3,
+.date p {
+	text-align: center;
+}
+
+.date p {
+	color: #757575;
+}
+
 .round {
 	display: inline-block;
   	position: relative;
@@ -127,7 +136,7 @@ p > img {
 .deg270 {
  	transform: rotate(270deg) translate(12em) rotate(-270deg);
  }
- 
+
 .deg322 {
 	transform: rotate(322deg) translate(12em) rotate(-322deg);
 }
