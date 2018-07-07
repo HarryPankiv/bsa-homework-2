@@ -255,7 +255,13 @@
 				arr[i] = " " + arr[i][0] + ":00&nbsp;-&nbsp;" + (+arr[i][arr[i].length-1] + 1) + ":00";
 			}
 
-			document.getElementById('schedule-' + document.getElementById('day').innerHTML.toLowerCase()).innerHTML = arr;
+			if (checked.length != 0) {
+				alert("Your schedule is changed!")
+				document.getElementById('schedule-' + document.getElementById('day').innerHTML.toLowerCase()).innerHTML = arr;
+			} else {
+				alert("You didn't choose anything!\nAre you sure about day off?")
+				document.getElementById('schedule-' + document.getElementById('day').innerHTML.toLowerCase()).innerHTML = "Day off";
+			}
 			return false;
 		}
 	</script>
